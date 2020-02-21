@@ -14,7 +14,7 @@ LineBotを作成します.
 ## 開発方法
 リポジトリをクローンする  
 ```bash
-git clone ""
+git clone https://github.com/FukeKazki/Hackathon_1.git
 ```
 ### <キックオフ>
 1. 課題に応じてissueを立てる
