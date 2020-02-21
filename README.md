@@ -16,6 +16,12 @@ LineBotを作成します.
 ```bash
 git clone https://github.com/FukeKazki/Hackathon_1.git
 ```
+
+モジュールのインストール
+```bash
+yarn install
+```
+
 ### <キックオフ>
 1. 課題に応じてissueを立てる
 2. GitHubのissueを元に開発ブランチをmasterブランチから切る  
