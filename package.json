@@ -1,0 +1,17 @@
+{
+  "name": "HackthonBot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "FukeKazki <kazkichi0906@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@line/bot-sdk": "^6.8.4",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  },
+  "scripts": {
+    "start": "babel-node index.js"
+  }
+}
