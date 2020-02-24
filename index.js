@@ -41,7 +41,7 @@ app.post('/webhook', line.middleware(config), (req, res) => {
     // LINEかどうかの確認
     if (!validateSignature(req.headers['x-line-signature'], req.body)) return
     // 色々処理する別ファイルの関数に渡す
-    mainFunction(req.body.events)
+    mainFunction(req.body.events[0])
 })
 
 // サーバーの起動
