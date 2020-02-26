@@ -45,7 +45,15 @@ export const pushMessage = (groupId, message) => {
                         ]
                     }
                 }
-            } else { // 普通の文字列のとき
+            } 
+            else if(text.match(/^現場猫.*/)){
+                content = {
+                    type: 'image',
+                    originalContentUrl: 'https://4.bp.blogspot.com/-iXsqh1jkecI/XgNpGfsJq-I/AAAAAAAADxo/kYPeM1jk6aAce9M7UVWSsx3FnH2IetOpQCK4BGAYYCw/s1600/%25E3%2581%25A9%25E3%2581%2586%25E3%2581%2597%25E3%2581%25A6%25E5%25A4%259C%25E4%25B8%25AD%25E3%2581%25AB%25E9%25A1%2594.png' ,
+                    previewImageUrl: 'https://4.bp.blogspot.com/-iXsqh1jkecI/XgNpGfsJq-I/AAAAAAAADxo/kYPeM1jk6aAce9M7UVWSsx3FnH2IetOpQCK4BGAYYCw/s1600/%25E3%2581%25A9%25E3%2581%2586%25E3%2581%2597%25E3%2581%25A6%25E5%25A4%259C%25E4%25B8%25AD%25E3%2581%25AB%25E9%25A1%2594.png'
+                }
+            }
+            else { // 普通の文字列のとき
                 content = {
                     type: 'text',
                     text: message.text
@@ -54,9 +62,20 @@ export const pushMessage = (groupId, message) => {
             break
         }
         case 'image': { // 画像のとき
+            content = {
+                type: 'sticker',
+                packageId: '11538',
+                stickerId: '51626525'
+            }
+
             break
         }
         case 'sticker': { // スタンプのとき
+            content = {
+                type: 'sticker',
+                packageId: '11538',
+                stickerId: '51626521'
+            }            
             break
         }
     }
