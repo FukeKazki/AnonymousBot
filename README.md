@@ -1,8 +1,16 @@
-# 第1回合同ハッカソン with プロ研, S3, コン研
-## 概要
-LineBotを作成します.  
-## テーマ
+# 匿名LINEBot かわりに伝えるねこ
+<p align='center'>
+    <img src='./images/anonymousbot.gif' />
+</p>
+<p align='center'>QRコード: https://qr-official.line.me/sid/L/278masrf.png</p>
 
+
+## 概要
+第1回合同ハッカソン with プロ研, C3, コン研でのプロダクトです.  
+優秀賞(2位)を頂きました.  
+このBotに個人チャットでメッセージを送ると, 特定のグループで代わりに発言してくれます.  
+## テーマ
+アイスブレイク
 ## 開発環境
 | tool       | version |
 |------------|---------|
